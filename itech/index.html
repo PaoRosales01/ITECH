@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Itech</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Favicons
+    ================================================== -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="portal/css/bootstrap.css">
+  <!--<link rel="stylesheet" type="text/css" href="fonts/fontawesome-free-5.10.2-web/css/all.css">-->
+  <link rel="stylesheet" type="text/css" href="portal/fonts/font-awesome/css/font-awesome.css">
+  </script>
+  <link rel="stylesheet" type="text/css" href="portal/fonts/fontawesome-free-5.10.2-web/css/all.min.css">
+  </script>
+
+  <!-- Stylesheet
+    ================================================== -->
+  <link rel="stylesheet" type="text/css" href="portal/css/style.css">
+  <link rel="stylesheet" type="text/css" href="portal/css/nivo-lightbox/nivo-lightbox.css">
+  <link rel="stylesheet" type="text/css" href="portal/css/nivo-lightbox/default.css">
+  <link rel="stylesheet" type="text/css" href="portal/css/customlighbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <!--Floating WhatsApp css-->
+  <link rel="stylesheet"
+    href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+
+
+  <script type="text/javascript" src="portal/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="portal/js/gallery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // indicamos que se ejecuta la funcion a los 5 segundos de haberse
+      // cargado la pagina
+      setTimeout(clickbutton, 1000);
+
+      function clickbutton() {
+        // simulamos el click del mouse en el boton del formulario
+        $("#allgall").click();
+      }
+    });
+
+    $(document).ready(function () {
+      // indicamos que se ejecuta la funcion a los 5 segundos de haberse
+      // cargado la pagina
+      setTimeout(clickbuttontime, 200);
+
+      function clickbuttontime() {
+        // simulamos el click del mouse en el boton del formulario
+        $("#timeapp").click();
+      }
+    });
+
+
+    $(function () {
+
+      var filterList = {
+
+        init: function () {
+
+          // MixItUp plugin
+          // http://mixitup.io
+          $('#portfoliolist').mixItUp({
+            selectors: {
+              target: '.portfolio',
+              filter: '.filter'
+            },
+            load: {
+              filter: '.app'
+            }
+          });
+
+        }
+
+      };
+
+      // Run the show!
+      filterList.init();
+
+
+    });
+  </script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation
+    ==========================================-->
+  <button class="circular ui icon button">
+    <i class="icon settings"></i>
+  </button>
+  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="row">
+        <div class="navbar-header col-sm-6">
+          <button type="button" class="navbar-toggle collapsed col-2" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
+              class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <!--<a class="navbar-brand page-scroll" href="#page-top">Servicio Automotriz Aguiñaga</a> </div>-->
+          <a class="navbar-brand page-scroll col-10" href="#page-top">
+            <div>
+              <img src="portal/img/logoitech.png" style="border-radius: 1rem;" height="45" alt="">
+              itech
+            </div>
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse col-sm-6" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <!--<li><a href="#features" class="page-scroll">Features</a></li>-->
+            <li><a href="#about" class="page-scroll">Nosotros</a></li>
+            <li><a href="#services" class="page-scroll">Servicios</a></li>
+            <li><a href="#gallery" class="page-scroll">Galería</a></li>
+            <!--<li><a href="#testimonials" class="page-scroll">Testimonials</a></li>-->
+            <!--<li><a href="#team" class="page-scroll">Team</a></li>-->
+            <li><a href="#contact" class="page-scroll">Contacto</a></li>
+            <li><a href="itech/index.php" class="page-scroll login-option">Iniciar Sesión</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+
+      </div>
+      <!--<div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn contact-whatsapp"><i class="fa fa-whatsapp"></i>
+          Manda Whatsapp!
+        </button>
+      </div>
+    </div>-->
+    </div>
+  </nav>
+
+  <section id="container-slider" class="intro">
+    <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+    <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+    <ul class="listslider">
+      <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+      <li><a itlist="itList_1" href="#"></a></li>
+      <li><a itlist="itList_2" href="#"></a></li>
+      <li><a itlist="itList_3" href="#"></a></li>
+      <li><a itlist="itList_4" href="#"></a></li>
+    </ul>
+    <ul id="slider">
+
+      <div id="sliderContent">
+
+      </div>
+    </ul>
+  </section>
+
+  <!-- Burbujas -->
+  <div class="row">
+    <div class="llamada">
+      <a href="#" class="float-tel" onclick="callTo()"><i class="fas fa-phone float-telico"></i></a>
+    </div>
+
+  </div>
+
+  <!-- Modal citas -->
+
+  <form id="formulario">
+    <div class="modal fade" id="modalCitas">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <br>
+          <div class="row"></div> <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title">Cotizar sin costo</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>Solicita tu presupuesto totalmente gratis. Llena el siguiente formulario para continuar:</p>
+            <div class="row">
+              <h3 class="col-sm-12 text-centered">Datos personales</h3>
+              <p class="text-info">Si ya dispones de una cuenta con nosotros, inicia sesión para llevar un mejor control
+                de tus cotizaciones.</p>
+              <div class="col-sm-12">
+                <h5 for="name">Nombre</h5>
+                <div class="input-group mb-3">
+                  <span class="input-group-addon">
+
+                  </span>
+                  <input type="text" id="name" name="name" class="form-control" tabindex="21"
+                    data-error="Rellena este campo para continuar." data-success="Válido" required>
+                </div>
+                <small id="nombreAyuda" class="text-muted">
+                </small>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <h5>Primer apellido</h5>
+                <div class="input-group mb-3">
+                  <span class="input-group-addon">
+
+                  </span>
+                  <input type="text" id="ape1" name="ape1" class="form-control" tabindex="22"
+                    data-error="Rellena este campo para continuar." data-success="Válido" required>
+                </div>
+                <small id="ape1Ayuda" class="text-muted">
+
+                </small>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <h5>Segundo apellido</h5>
+                <div class="input-group mb-3">
+                  <span class="input-group-addon">
+
+                  </span>
+                  <input type="text" id="ape2" name="ape2" class="form-control" tabindex="23"
+                    data-error="Rellena este campo para continuar." data-success="Válido" required>
+                </div>
+                <small id="ape1Ayuda" class="text-muted">
+
+                </small>
+              </div>
+              <div class="col-sm-12">
+                <h5>Teléfono de contacto</h5>
+                <div class="input-group mb-3">
+                  <span class="input-group-addon">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                  <input type="tel" id="tel" name="tel" class="form-control" tabindex="24"
+                    data-error="Rellena este campo para continuar." data-success="Válido" required>
+                </div>
+                <small id="telAyuda" class="text-muted">
+
+                </small>
+              </div>
+            </div>
+            <div class="row p-xl-5">
+              <h3 class="col-sm-12 text-centered">Detalles de la cotización</h3>
+              <div class="col- == truesm-12 col-md-6">
+                <h5 style="display:none">Fecha de la solicitud de cotización</h5>
+                <div class="input-group mb-3">
+                  <span style="display:none" class="input-group-addon">
+                    <i class="fas fa-calendar-check"></i>
+                  </span>
+                  <input style="display:none" type="date" id="appointmentDate" name="appointmentDate" class="form-control" tabindex="25"
+                    aria-describedby="citaAyuda" data-error="Ingresa una fecha con el formato establecido."
+                    data-success="Válido" required>
+                </div>
+                <small style="display:none" id="citaAyuda" class="text-muted">
+                  Seleccione la fecha en la cual solicitó su cotización.
+                </small>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <h5 style="display:none">Hora de la solicitud</h5>
+                <div class="input-group">
+                  <span style="display:none" class="input-group-addon">
+                    <i class="fas fa-clock"></i>
+                  </span>
+                  <input style="display:none"  type="time" id="appointmentTime" name="appointmentTime"
+                    class="form-control" tabindex="26" aria-describedby="horaAyuda"
+                    data-error="Ingresa el horario con el formato establecido." data-success="Válido" required>
+                </div>
+                <div>
+                  <button style="display:none" type="button" id="timeapp" onClick="timeChange()">Tiempo</button>
+                </div>
+                <small style="display:none"  id="horaAyuda" class="text-muted">
+                  Seleccione la hora en la cual solicitó su cotización en formato 24 hr
+                </small>
+              </div>
+              <div class="col-sm-12">
+                <h5>Descripción del trabajo que requiere</h5>
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="fas fa-home"></i>
+                  </span>
+                  <input type="text" id="appointment" name="appointment" class="form-control" tabindex="27"
+                    aria-describedby="appAyuda" data-error="Debes ingresar el motivo de la cita." data-success="Válido"
+                    required>
+                </div>
+                <small id="appAyuda" class="text-muted">
+                </small>
+              </div>
+
+            </div>
+            <div class="row" id="appointmentFeedback">
+
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-custom success-modal shadow p-4 mb-4 bg-white"
+              onclick="makeAppointment()" tabindex="29" data-dismiss="modal">Finalizar cotización</button>
+            <button type="button" class="btn btn-custom cancel-modal shadow p-4 mb-4 bg-white" tabindex="28"
+              data-dismiss="modal">Cerrar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="modal fade" id="confirmationModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body text-center" id="confirmationMessage">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-custom success-modal shadow p-4 mb-4 bg-white" tabindex="28"
+            data-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="text-center">
+    <div class="section-title" id="features-title">
+      <h2>¿Quiénes somos?</h2>
+    </div>
+  </div>
+  <div id="features" class="text-center">
+    <div class="container">
+      <div class="row">
+        <div id="misvis-content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6" id="aboutPhoto">
+
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2>Nosotros</h2>
+          <div class="about-text" id="about-content">
+            <!--<p>Somos una empresa, establecida en el estado de Durango, cuyo principal propósito se basa en la stasicacción del cliente a través de nuestros servicios de mantenimiento automotriz</p>
+          <h3>Por qué elegirnos?</h3>
+          <div class="list-style">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <ul>
+                <li>Personal capacitado</li>
+                <li>Uso de equipo avanzado</li>
+                <li>Buen trato al cliente</li>
+                <li>Ofrecemos las mejores alternativas de solución </li>
+              </ul>
+            </div>
+          </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services Section -->
+  <div id="services" class="text-center">
+    <div class="container">
+      <div class="section-title">
+        <h2>Nuestros Servicios</h2>
+      </div>
+      <div class="row" id="services-content">
+      </div>
+    </div>
+  </div>
+ <!-- Testimonials Section -->
+ <!--
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <div id="promotions" class="wrapper">
+      <div class="section-title text-center">
+        <h2>Proyectos</h2>
+      </div>
+  <section id="counter" class="counter">
+      <div class="main_counter_area">
+          <div class="overlay p-y-3">
+              <div class="container">
+                  <div class="row">
+                      <div class="main_counter_content text-center white-text wow fadeInUp">
+                          <div class="col-md-3">
+                              <div class="single_counter p-y-2 m-t-1"> <i class="fa fa-heart m-b-1"></i>
+                                <div id="contentClientes">
+
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="single_counter p-y-2 m-t-1"> <i class="fa fa-user m-b-1"></i>
+                                <div id="contentEmpleados">
+
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="single_counter p-y-2 m-t-1"> <i class="fa fa-location-arrow m-b-1"></i>
+                                <div id="contentProyectos">
+
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="single_counter p-y-2 m-t-1"> <i class="fa fa-check m-b-1"></i>
+                                <div id="contentProyectosC">
+
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  </div>
+   -->
+
+
+  <!-- Gallery Section -->
+  <div id="gallery" class="photo-gallery">
+    <div class="section-title text-center">
+      <h2 id="galfooter">Galería</h2>
+    </div>
+
+    <!--   <div id="galleryContent">
+      </div> -->
+    <div class="containergall">
+      <ul id="filters" class="clearfix">
+        <li><span id="allgall" class="filter active" data-filter=".PCGamer, .Laptop, .PCEsc, .Otros">Todo</span></li>
+          <li><span class="filter" data-filter=".PCGamer">PC Gamer</span></li>
+          <li><span class="filter" data-filter=".Laptop">Laptop</span></li>
+          <li><span class="filter" data-filter=".PCEsc">PC Escritorio</span></li>
+      </ul>
+      <div id="portfoliolist">
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="section-title">
+            <h2>¡Ponte en contacto con nosotros!</h2>
+            <p>No dudes en preguntar cualquier duda acerca de nuestros servicios.</p>
+          </div>
+          <form name="sentMessage" id="contactForm" onsubmit="sendMessage()">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" id="nombre" class="form-control" placeholder="Nombre" tabindex="11" required>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" id="email" class="form-control" tabindex="12" placeholder="Email">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="number" id="telefono" class="form-control" tabindex="13" placeholder="Teléfono" required>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" id="asunto" class="form-control" placeholder="Asunto" tabindex="16" required>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje" tabindex="14"
+                required></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div id="success"></div>
+            <button type="submit" class="btn btn-custom btn-lg" tabindex="15">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3 col-md-offset-1 contact-info">
+        <h3>Información de contacto</h3>
+        <ul class="nav nav-tabs" id="contactInfoTabs">
+
+        </ul>
+        <div class="tab-content" id="contactInfo">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <div id="footer">
+    <div class="container">
+      <div class="footer-basic">
+        <footer>
+          <div class="social">
+            <a href="https://www.instagram.com/" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCNSfpDl_vMf6PwhpwV3TlrA" target="_blank"><i
+                class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank" onclick="openWhatsapp()"><i class="fab fa-whatsapp" target="_blank"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i
+                class="fab fa-facebook-square"></i></a>
+          </div>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#about">Nosotros</a></li>
+            <li class="list-inline-item"><a href="#services">Servicios</a></li>
+            <li class="list-inline-item"><a href="#galfooter">Galería</a></li>
+            <li class="list-inline-item"><a href="#contact">Contacto</a></li>
+          </ul>
+          <p class="copyright">Itech © 2022 </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <div id="WAButton">
+
+  </div>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
+<script src="itech/js/jqBootstrapValidation.js"></script>
+
+  <script>
+  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+</script>
+
+  <script>
+    function timeChange() {
+      var d = new Date();
+      d.getHours();
+      d.getMinutes();
+      d.getSeconds();
+
+      var hours = d.getHours();
+      var minutes = d.getMinutes();
+      var seconds = d.getSeconds();
+
+      document.getElementById("appointmentTime").value = hours+":"+minutes+":"+seconds;
+    }
+
+  </script>
+
+  <script>
+    window.onload = function () {
+      var fecha = new Date(); //Fecha actual
+      var mes = fecha.getMonth() + 1; //obteniendo mes
+      var dia = fecha.getDate(); //obteniendo dia
+      var ano = fecha.getFullYear(); //obteniendo año
+      if (dia < 10)
+        dia = '0' + dia; //agrega cero si el menor de 10
+      if (mes < 10)
+        mes = '0' + mes //agrega cero si el menor de 10
+      document.getElementById('appointmentDate').value = ano + "-" + mes + "-" + dia;
+    }
+  </script>
+  <script type="text/javascript" src="portal/js/jquery-3.3.1.min.js"></script>
+  <!--Floating WhatsApp javascript-->
+  <script type="text/javascript"
+    src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+  <script type="text/javascript" src="portal/js/bootstrap.js"></script>
+  <script type="text/javascript" src="portal/js/gallery.js"></script>
+  <script type="text/javascript" src="portal/js/nivo-lightbox.js"></script>
+  <script type="text/javascript" src="portal/js/jqBootstrapValidation.js"></script>
+  <script type="text/javascript" src="portal/js/moment.min.js"></script>
+  <script type="text/javascript" src="itech/js/StringBuilder.js"></script>
+  <script type="text/javascript" src="portal/js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="portal/js/index.js"></script>
+  <script type="text/javascript" src="portal/js/carrusel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</body>
+
+</html>
