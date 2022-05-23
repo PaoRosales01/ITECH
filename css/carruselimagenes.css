@@ -1,0 +1,82 @@
+.main{
+    width: 1200px;
+    height: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner{
+    width: 1200px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-slide{
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    background-repeat: no-repeat;
+    display: none;
+}
+.slide1{
+    background: url("../img/1.png");
+}
+.slide2{
+    background: url("../img/2.png");
+}
+.slide3{
+    background: url("../img/3.png");
+}
+
+.slide-active{
+    display: block;
+}
+
+.buttoncarr{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    left: 0;
+    top: 50%;
+    margin-top: -40px;
+    z-index: 0;
+    background: url("../img/arrow.png") no-repeat center;
+    background-size: cover;
+}
+.buttoncarr:hover{
+    background: #333; 
+    background-color: #333;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.prev{
+    transform: rotate(180deg);
+}
+.next{
+    right:0;
+    left: auto;
+}
+.dots{
+    position: absolute;
+    right: 20px;
+    bottom: 24px;
+    text-align: right;
+}
+.dots span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: rgba(7,17,27,0.4);
+    margin-right: 8px;
+    line-height: 12px;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;
+    cursor: pointer;
+}
+
+.dots span.active{
+    box-shadow: 0 0 0 2px rgba(7,17,27,0.4) inset;
+    background: #fff;
+}
